@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>BMI - Calculator</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #results {
+            margin-top: 20px;
+        }
+
+        #weight-guide {
+            margin-top: 20px;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        #weight-guide p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>BMI - Calculator</h1>
+    <form>
+        <label for="height">Height In CM</label>
+        <input type="number" id="height" placeholder="Height in cm">
+
+        <label for="weight">Weight In kg</label>
+        <input type="number" id="weight" placeholder="Weight in kg">
+
+        <button>Calculate</button>
+
+        <div id="results"></div>
+        <div id="weight-guide">
+            <p>1. Underweight: less than 18.5</p>
+            <p>2. Normal: between 18.5 and 24.9</p>
+            <p>3. Overweight: between 25 and 29.9</p>
+            <p>4. Obesity: 30 or greater</p>
+        </div>
+    </form>
+</body>
+<script src="app.js"></script>
+</html>
